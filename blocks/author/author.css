@@ -1,0 +1,81 @@
+.author-wrapper {
+    padding: 10px;
+    justify-content: space-between;
+    padding: 40px 0px;
+    border-top: 4px solid #ebebeb;
+}
+
+.author-wrapper > div > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.author-wrapper > div > div > div:first-child img {
+    border-radius: 30px;
+    height: 60px;
+    object-fit: cover;
+    width: 60px;
+}
+
+.author-wrapper > div > div > div:nth-child(2) p:first-child {
+    font-size: var(--fontSizeLarge, 24px);
+    margin-bottom: 0.83rem;
+    margin-left: 25px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.author-wrapper > div > div > div:nth-child(2) p:nth-child(2) {
+    color: dimgray;
+    font-size: var(--fontSizeXSmall, 9pt);
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.author-wrapper > div > div > div:last-child {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .author-wrapper > div > div > div:last-child {
+        width: auto;
+        margin-left: 250px;
+        margin-top: -20px;
+    }
+}
+
+.author-wrapper > div > div > div:last-child .button-container {
+    text-align: center;
+}
+
+.author-wrapper > div > div > div:last-child .button-container > a {
+    all: unset;
+    color: red;
+}
+
+.author-wrapper > div > div > div:last-child .button-container {
+    display: inline-block;
+    height: 3pc;
+    width: 3pc;
+    background-color: black;
+    margin-right: -10px !important;
+}
+
+.author-wrapper > div > div > div:last-child .button-container .icon {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.section .border-line {
+    display: block;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    color: #ebebeb;
+    margin-left: 1%;
+    margin-right: 3%;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,54 @@
+.section.magazine-list.article-container {
+    .default-content-wrapper p {
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.article.block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article.block li {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.article.block li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: rgb(207, 205, 205);
+}
+
+.article.block a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+    margin-left: 20px;
+}
+
+.article.block .last-modified {
+    font-size: 0.6em;
+    color: #666;
+    margin-left: 20px;
+    white-space: pre-line;
+}
+
+.article.block li:hover {
+    background-color: rgb(255, 234, 0);
+}

@@ -1,27 +1,114 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+.section.cards-container > .cards-wrapper > .cards.block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 14px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.section.cards-container
+    > .default-content-wrapper
+    > .recent-article-title-wrapper {
+    display: inline-block;
+}
+.section.cards-container > .default-content-wrapper > h2 {
+    color: rgb(32, 32, 32);
+    display: block;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    font-size: 36px;
+    height: 64px;
+    line-height: 27px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 54px;
+    position: relative;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.section.cards-container > .default-content-wrapper > h3 {
+    color: rgb(32, 32, 32);
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.section.cards-container
+    > .cards-wrapper
+    > .cards.block
+    > div
+    > div:first-child
+    > p {
+    margin-bottom: 0;
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.section.cards-container
+    > .cards-wrapper
+    > .cards.block
+    > div
+    > div:first-child
+    > p
+    > a
+    > picture
+    > img {
+    all: unset;
+    height: 180px !important;
+    width: auto;
+    object-fit: cover;
+}
+
+.section.cards-container
+    > .cards-wrapper
+    > .cards.block
+    > div
+    > div:last-child
+    > .button-container {
+    margin-top: 0;
+}
+
+.section.cards-container
+    > .cards-wrapper
+    > .cards.block
+    > div
+    > div:last-child
+    > .button-container
+    > a {
+    all: unset;
+    color: #202020;
+    font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-wrap: wrap;
+}
+
+.section.cards-container
+    > .cards-wrapper
+    > .cards.block
+    > div
+    > div:last-child
+    > p:last-child {
+    color: dimgray;
+    font-size: 14px;
+    margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 260px;
+    line-height: 1.5;
+}
+
+.border-line {
+    display: block;
+    margin: 0.5em auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ebebeb;
+    margin-left: 3%;
+    margin-right: 3%;
 }

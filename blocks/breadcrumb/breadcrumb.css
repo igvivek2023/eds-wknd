@@ -1,0 +1,67 @@
+.section.magazine-breadcrumb.breadcrumb-container {
+    padding: 3px;
+    background-color: white;
+}
+.breadcrumb.block {
+    display: block;
+    width: 100vw;
+}
+.breadcrumb.block nav > ol {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left: -3px;
+    list-style: none;
+}
+
+.breadcrumb.block nav > ol > li {
+    font-size: small;
+    padding: 0 5px;
+    color: #545252;
+    list-style-type: none;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.breadcrumb.block nav > ol > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.breadcrumb.block nav > ol > li::before {
+    font-family: arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 14px;
+    content: "▶";
+    color: #ffea00;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.breadcrumb.block nav > ol > li:first-child::before {
+    content: none;
+}
+
+@media (min-width: 1024px) {
+    .section.magazine-breadcrumb.breadcrumb-container {
+        background-color: white;
+        margin-top: 20px;
+        padding: 0px 30px;
+    }
+
+    .breadcrumb.block nav > ol {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .breadcrumb.block nav > ol > li {
+        font-size: medium;
+    }
+}
